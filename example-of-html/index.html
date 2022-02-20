@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- 用來告知瀏覽器此檔案為 html 檔 -->
+<html>
+    <head> <!-- 存放網頁資訊 -->
+        <meta charset="UTF-8"/> <!-- 設定網頁的編碼 -->
+        <meta name="description" content="裡面有很多 html 範例"/> <!-- 提供給搜尋引擎的資訊 -->
+        <meta name="author" content="Frank"/> <!-- 提供給搜尋引擎的資訊 -->
+        <meta name="keywords" content="html, example"/> <!-- 提供給搜尋引擎的資訊 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- 根據瀏覽裝置的寬度來對畫面做堤整/縮放，初始的縮放比為 100% -->
+        <title>小白的網頁</title>
+    </head>
+    <body> <!-- 存放網頁內容 -->
+        <!-- 標籤 -->
+        <h1>超多文章隨你看</h1> <!-- 標題 Level1 -->
+        <h2>第一篇文章</h2> <!-- 標題 Level2 -->
+        <p>今天天氣真好 <i><b>好爽</b></i> 哈哈</p> <!-- 讓"好爽"兩字顯示為粗體與斜體 -->
+        <br/> <!-- 換行 -->
+        <hr/> <!-- 水平線 -->
+        <br/>
+        <h2>第二篇文章</h2>
+        <p>今天天氣不好 不爽 <i>哭哭</i></p>
+        <br/>
+        <hr/>
+
+        <!-- 連結 -->
+        <h2>連結</h2>
+        <a href="https://google.com">Google</a> <!-- 連結到網頁， 其中href 是 a 的"屬性" -->
+        <a href="page2.html">page2</a> <!-- 連結到同個資料夾下的 page2.html -->
+        <a href="dir/page3.html">page3</a> <!-- 連結到 dir 資料夾下的 page3.html -->
+        <a href="sample.PNG">簡介</a> <!-- 連結到檔案 -->
+        <br/>
+        <hr/>
+
+        <!-- 圖片 -->
+        <h2>圖片</h2>
+        <img src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" width="200"/> <!-- 顯示網路上的圖片 -->
+        <img src="sample.PNG"/> <!-- 顯示同個資料夾下的圖片 -->
+        <br/>
+        <hr/>
+
+        <!-- 影片 -->
+        <h2>影片</h2>
+        <video src="sample.mp4" controls width="500">無法載入影片</video>
+        <br/>
+        <hr/>
+
+        <!-- Youtube 影片 -->
+        <h2>Youtube 影片</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/>
+        <hr/>
+
+        <!-- 列表 -->
+        <h2>列表</h2>
+        <ul> <!-- 無序列表 -->
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Instgram</li>
+            <li>Twitter</li>
+        </ul>
+        <ol type="I"> <!-- 有序列表，使用 type 屬性調整項目符號 -->
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Instgram</li>
+            <li>Twitter</li>
+        </ol>
+        <br/>
+        <hr/>
+
+        <!-- 表格 -->
+        <h2>表格</h2>
+        <table width="300">
+            <tr>
+                <td>日期</td>
+                <td>數學</td>
+                <td>英文</td>
+            </tr>
+            <tr>
+                <td>2022/02/08</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>2022/02/09</td>
+                <td>85</td>
+                <td>95</td>
+            </tr>
+        </table>
+        <br/>
+        <hr/>
+
+        <!-- 容器 (div) -->
+        <h2>容器 (div)</h2>
+        <div>div1</div> <!-- 無論字多大，皆會佔用整行的空間-->
+        <div>div2</div>
+        <div style="background-color:red;"> <!-- 善用 div 可於 CSS 做美化網頁時方便許多-->
+            <ul>
+                <li>Google</li>
+                <li>Facebook</li>
+                <li>Instgram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <br/>
+        <hr/>
+
+        <!-- 容器 (span) -->
+        <h2>容器 (span)</h2>
+        <span>span1</span> <!-- 字多大，佔用的空間就多大-->
+        <span>span2</span>
+        <p>My mother has <span style="background-color:blue;">blue</span> eyes.</p> 
+        <br/>
+        <hr/>
+
+        <!-- 輸入控制項 (input) -->
+        <h2>輸入控制項 (input)</h2>
+        <input type="text" placeholder="請輸入帳號"/> <!-- type 屬性決定 input 類型， placeholder 屬性可設定提示文字-->
+        <br/><br/>
+        <input type="password" placeholder="請輸入密碼"/>
+        <br/><br/>
+        <input type="date"/>
+        <br/><br/>
+        <input type="color"/>
+        <br/><br/>
+        <input type="file"/>
+        <br/><br/>
+        <input type="checkbox"/>
+        <br/><br/>
+        <input type="range"/>
+        <br/>
+        <hr/>
+
+        <!-- 輸入控制項 (textarea) -->
+        <h2>輸入控制項 (textarea)</h2>
+        <textarea placeholder="請輸入文章"></textarea>
+        <br/>
+        <hr/>
+    </body>
+</html>
